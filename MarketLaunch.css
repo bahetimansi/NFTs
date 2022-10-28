@@ -1,0 +1,458 @@
+.wallet-btn-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.wallet-btn-wrap .title, .market-wrap .title{
+    font-family: var(--t-font);
+    color: rgb(var(--l-color));
+    font-size: 6ch;
+    margin-left: 7rem;
+    margin-top: 4rem;
+    position: relative;
+}
+.wallet-btn-wrap .title::before, .market-wrap .title::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    background-color: rgb(var(--a-color));
+    z-index: -1;
+}
+.market-wrap .title{
+    width: fit-content;
+}
+.wallet-btn-wrap .wallet-btn{
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid rgb(var(--a-color));
+    color: rgb(var(--l-color));
+    text-align: center;
+    font-family: var(--t-font);
+    font-size: 2.5ch;
+    line-height: 3.6ch;
+    margin-top: 4rem;
+    margin-right: 7rem;
+    position: relative;
+    cursor: pointer;
+}
+.wallet-btn-wrap .wallet-btn::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(var(--l-color));
+    left: -.5rem;
+    top: -.5rem;
+    z-index: -1;
+}
+.wallet-btn-wrap .wallet-btn:hover{
+    background-color: rgb(var(--a-color));
+    color: rgb(var(--d-color));
+    font-weight: 600;
+}
+.wallet-btn-wrap .wallet-btn:hover::before{
+    background-color: rgb(var(--l-color));
+}
+.wallet-link{
+    font-family: var(--t-font);
+    color: rgb(var(--a-color));
+    font-size: 3ch;
+    margin-top: 4rem;
+    margin-right: 7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.wallet-link:hover{
+    text-decoration: underline;
+}
+
+.launch-tile-wrap{
+    margin: 7rem 15rem;
+    display: grid;
+}
+.launch-tile-body{
+    grid-column: 1/2;
+}
+.launch-tile-body h1{
+    font-family: var(--t-font);
+    color: rgb(var(--l-color));
+    font-size: 4ch;
+}
+.launch-tile-body h1 span{
+    background-color: rgb(var(--a-color));
+}
+.launch-tile-body p{
+    font-family: var(--b-font);
+    color: rgb(var(--l-color));
+    font-size: 2ch;
+    margin-top: 2rem;
+    margin-right: 17rem;
+}
+.mint-btn{
+    width: 30rem;
+    height: 3rem;
+    border: 2px solid rgb(var(--a-color));
+    margin-top: 2rem;
+    color: rgb(var(--l-color));
+    font-family: var(--t-font);
+    font-size: 3ch;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.mint-btn:hover{
+    background-color: rgb(var(--a-color));
+    color: rgb(var(--d-color));
+    font-weight: 600;
+}
+.mint-btn::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: -.5rem;
+    top: -.5rem;
+    border: 2px solid rgb(var(--l-color));
+    z-index: -1;
+}
+.mint-btn:hover::before{
+    background-color: rgb(var(--l-color));
+}
+
+.launch-img{
+    grid-column: 2/3;
+    width: 35rem;
+    height: 35rem;
+    background-image: url(../../asset/Images/gucci.jpg);
+    background-size: cover;
+}
+
+@media (max-width: 1440px) {
+    .launch-tile-wrap{
+        margin: 7rem 9rem;
+    }
+    .launch-tile-body p{
+        margin-right: 8rem;
+    }
+    .launch-img{
+        width: 30rem;
+        height: 30rem;
+    }
+}
+@media (max-width: 1220px) {
+    .wallet-btn-wrap .title, .market-wrap .title{
+        font-size: 5ch;
+    }
+    .wallet-btn-wrap .wallet-btn{
+        width: 15rem;
+        font-size: 2ch;
+    }
+    .wallet-link{
+        font-size: 2.5ch;
+    }
+    .launch-tile-body h1{
+        font-size: 3ch;
+    }
+    .launch-tile-body p{
+        font-size: 1.7ch;
+        margin-right: 7rem;
+    }
+    .mint-btn{
+        width: 20rem;
+        font-size: 2ch;
+        line-height: 4ch;
+    }
+}
+@media (max-width: 1024px) {
+    .launch-tile-wrap{
+        margin: 7rem 7rem;
+    }
+    .launch-img{
+        width: 25rem;
+        height: 25rem;
+    }
+}
+@media (max-width: 768px){
+    .wallet-btn-wrap .title, .market-wrap .title{
+        font-size: 4ch;
+        margin-left: 3rem;
+    }
+    .wallet-btn-wrap .wallet-btn{
+        font-size: 1.5ch;
+        line-height: 4ch;
+        height: 2.5rem;
+        width: 10rem;
+        margin-right: 3rem;
+    }
+    .wallet-link{
+        margin-right: 3rem;
+        font-size: 2ch;
+    }
+    .launch-tile-wrap{
+        margin: 4rem 4rem;
+    }
+    .launch-img{
+        width: 18rem;
+        height: 18rem;
+    }
+    .launch-tile-body p {
+        font-size: 1.5ch;
+    }
+    .mint-btn{
+        width: 16rem;
+    }
+}
+@media (max-width: 425px) {
+    .wallet-btn-wrap .title, .market-wrap .title{
+        margin-left: 1rem;
+        font-size: 3.5ch;
+    }
+    .wallet-btn-wrap .wallet-btn{
+        width: 10rem;
+        margin-right: 1rem;
+    }
+    .wallet-link{
+        margin-right: 1rem;
+        margin-top: 5rem;
+    }
+    .launch-tile-wrap{
+        margin: 3rem 1.5rem;
+    }
+    .launch-tile-body{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .launch-img{
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 90vw;
+        height: 90vw;
+        margin-bottom: 1rem;
+    }
+    .launch-tile-body p{
+        margin-right: 1.5rem;
+    }
+    .mint-btn{
+        width: 90vw;
+    }
+}
+
+.market-wrap{
+    margin-bottom: 7rem;
+}
+.market-tiles-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 7rem;
+}
+.market-tile{
+    border: 2px solid rgb(var(--l-color));
+    padding: 1vw;
+    width: 32vw;
+}
+.market-tile-body h4{
+    font-family: var(--t-font);
+    position: relative;
+    color: rgb(var(--l-color));
+    font-size: 2.5ch;
+    display: inline-block;
+    width: fit-content;
+}
+.market-tile-body h4:nth-of-type(2), .market-tile-body h4:nth-of-type(4){
+    right: 0;
+    float: right;
+    text-align: right;
+    background-color: rgb(var(--a-color));
+    color: rgb(var(--d-color));
+}
+#img1{
+    background-image: url(../../asset/Images/spotify.jpg);
+}
+#img2{
+    background-image: url(../../asset/Images/razor.jpg);
+}
+#img1, #img2{
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.market-tile .utility{
+    font-family: var(--b-font);
+    color: rgb(var(--l-color));
+    font-size: 2ch;
+    margin: 1vw;
+}
+.market-tile .mint-btn{
+    width: 20vw;
+    margin-left: .5vw;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .market-tile{
+        width: 35.5vw;
+    }
+    #img1, #img2{
+        width: 33vw;
+        height: 33vw;
+    }
+
+}
+@media (max-width: 768px) {
+    .market-tile{
+        width: 40.5vw;
+    }
+    #img1, #img2{
+        width: 38vw;
+        height: 38vw;
+    }
+    .market-tile-body h4{
+        font-size: 2ch;
+    }
+    .market-tile-body .utility{
+        font-size: 1.5ch;
+        font-weight: 300;
+    }
+    .market-tile-body .mint-btn{
+        height: 2.5rem;
+        line-height: 3ch;
+    }
+}
+@media (max-width: 425px) {
+    .market-tiles-wrap{
+        margin-top: 4rem;
+    }
+    .market-tile{
+        width: 80.5vw;
+        margin-bottom: 2rem;
+    }
+    #img1, #img2{
+        width: 78vw;
+        height: 78vw;
+    }
+    .market-tile-body .mint-btn{
+        width: 45vw;
+        margin-left: 2vw;
+    }
+}
+
+
+
+/* Wallet Popup */
+
+.popup-wrap{
+    position: fixed;
+    background-color: rgb(var(--d-color), .5);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    visibility: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-open{
+    visibility: visible;
+}
+.wallet-popup{
+    background-color: rgb(var(--a-color));
+    width: 45vw;
+    height: 25vw;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.wallet-popup p{
+    font-family: var(--b-font);
+    color: rgb(var(--d-color));
+    font-size: 3ch;
+    text-align: center;
+}
+.wallet-popup p span{
+    font-weight: 600;
+}
+.wallet-popup .wallet-btn{
+    margin-right: 0;
+    border: 2px solid rgb(var(--d-color));
+    color: rgb(var(--d-color));
+}
+.wallet-popup .wallet-btn:hover{
+    background-color: rgb(var(--d-color));
+    color: rgb(var(--l-color));
+}
+
+.buy-popup-wrap{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(var(--d-color), .5);
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: collapse;
+}
+.buy-popup-open{
+    visibility: visible;
+}
+.buy-popup{
+    width: 30vw;
+    height: 20vw;
+    background-color: rgb(var(--a-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy-popup p{
+    font-family: var(--b-font);
+    font-size: 3ch;
+    font-weight: 600;
+    color: rgb(var(--d-color));
+    text-align: center;
+}
+
+@media (max-width: 1220px) {
+    .wallet-popup{
+        width: 55vw;
+    }
+    .buy-popup{
+        width: 40vw;
+    }
+}
+@media (max-width: 1024px) {
+    .wallet-popup p{
+        font-size: 2ch;
+    }
+    .buy-popup{
+        padding: 2rem;
+    }
+    .buy-popup p{
+        font-size: 2ch;
+    }
+}
+@media (max-width: 768px) {
+    .buy-popup{
+        width: 50vw;
+        height: 25vw;
+    }
+}
+@media (max-width: 425px) {
+    .wallet-popup{
+        width: 80vw;
+        height: 55vw;
+    }
+    .buy-popup{
+        width: 80vw;
+        height: 80vw;
+    }
+}

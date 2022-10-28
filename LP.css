@@ -1,0 +1,239 @@
+.main-section{
+    height: 70vh;
+}
+.main-section .title{
+    font-family: var(--t-font);
+    font-size: 10ch;
+    color: rgb(var(--l-color));
+    margin: 8rem 35rem 10rem 15rem;
+}
+.main-img{
+    background-image: url(../../asset/Images/LandingImg.png);
+    width: 35rem;
+    height: 22rem;
+    background-size: cover;
+    position: absolute;
+    top: 15rem;
+    right: 15rem;
+    z-index: -2;
+}
+.main-vector{
+    width: 835px;
+    height: 351px;
+    position: absolute;
+    z-index: -1;
+    top: 28vh;
+    left: 25vw;
+}
+.market-btn, .business-btn{
+    display: inline-block;
+    border: 2px solid rgb(var(--a-color));
+    width: 25vw;
+    height: 3.5rem;
+    position: relative;
+    left: 25%;
+    font-family: var(--t-font);
+    color: rgb(var(--l-color));
+    text-align: center;
+    line-height: 3ch;
+    font-size: 3ch;
+    cursor: pointer;
+    text-decoration: none;
+}
+.market-btn{
+    margin-right: 4rem;
+    margin-top: 2rem;
+}
+.market-btn::before, .business-btn::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(var(--l-color));
+    position: absolute;
+    top: -.7rem;
+    left: -.7rem;
+}
+.market-btn:hover, .business-btn:hover{
+    color: rgb(var(--d-color));
+    background-color: rgb(var(--a-color));
+    font-weight: 600;
+}
+.market-btn:hover::before, .business-btn:hover::before{
+    background-color: rgb(var(--l-color));
+    z-index: -3;
+}
+
+.timeline-sect{
+    margin: 4rem 0rem;
+}
+.about-first, .about-second, .about-third{
+    color: rgb(var(--l-color));
+    font-family: var(--t-font);
+    font-size: 4ch;
+    line-height: 1.5ch;
+    margin: 2rem 8rem;
+    position: relative;
+}
+.about-first::before, .about-second::before, .about-third::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4rem;
+    background-color: rgb(var(--a-color));
+    z-index: -1;
+}
+.about-body{
+    color: rgb(var(--l-color));
+    font-family: var(--b-font);
+    font-size: 2.3ch;
+    margin: 1rem 25rem 1rem 15rem;
+}
+.timeline-sect li{
+    margin: .5rem 20rem;
+    color: rgb(var(--l-color));
+    font-family: var(--b-font);
+    font-size: 2.3ch;
+}
+.about-body span{
+    font-weight: bold;
+    color: rgb(var(--a-color));
+}
+
+.main-lower-vector{
+    width: 600px;
+    height: 1000px;
+    position: absolute;
+    top: 100vh;
+    right: 15rem;
+    z-index: -10;
+}
+
+@media (max-width: 1440px) {
+    .main-img{
+        width: 30rem;
+        height: 19rem;
+        right: 8rem;
+    }
+    .main-section .title{
+        font-size: 8ch;
+        margin-left: 11rem;
+    }
+}
+@media (max-width: 1220px) {
+    .main-section .title{
+        font-size: 7ch;
+        margin-right: 25rem;
+    }
+    .main-lower-vector{
+        right: 2rem;
+    }
+}
+@media (max-width: 1024px) {
+    .main-section .title{
+        font-size: 6ch;
+        margin-left: 8rem;
+        margin-right: 21rem;
+    }
+    .main-img{
+        width: 25rem;
+        height: 16rem;
+        right: 4rem;
+    }
+    .main-vector{
+        width: 520px;
+    }
+    .about-first, .about-second, .about-third{
+        margin: 2rem 5rem;
+    }
+    .about-body{
+        font-size: 2ch;
+        margin-left: 8rem;
+        line-height: 2.3ch;
+    }
+    .timeline-sect li{
+        margin-left: 11rem;
+        font-size: 2ch;
+    }
+}
+@media (max-width: 768px) {
+    .main-section .title{
+        margin-right: 10rem;
+        margin-left: 4rem;
+    }
+    .main-img{
+        width: 20rem;
+        height: 13rem;
+        right: 3rem;
+    }
+    .main-vector{
+        width: 400px;
+        top: 40vh;
+        left: 19vw;
+    }
+    .market-btn, .business-btn{
+        font-size: 2ch;
+        line-height: 4ch;
+        left: 21%;
+    }
+    .about-first, .about-second, .about-third{
+        margin: 2rem 4rem;
+    }
+    .about-body{
+        margin-left: 6rem;
+        margin-right: 15rem;
+    }
+    .timeline-sect li{
+        margin-left: 9rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-section .title{
+        margin-left: 2rem;
+        margin-right: 1rem;
+        font-size: 4ch;
+    }
+    .main-vector{
+        width: 300px;
+        height: 300px;
+        top: 27vh;
+        left: 7vw;
+    }
+    .main-img{
+        top: 35vh;
+        width: 70vw;
+        height: 12rem;
+        right: 4rem;
+    }
+    .market-btn, .business-btn{
+        left: 10%;
+        width: 35vw;
+    }
+    .market-btn::before, .business-btn::before{
+        top: -.5rem;
+        left: -.5rem;
+    }
+    .about-first, .about-second, .about-third{
+        margin: 2rem 2rem;
+        font-size: 3ch;
+    }
+    .about-body{
+        margin-left: 3rem;
+        margin-right: 4rem;
+    }
+    .timeline-sect li{
+        margin-left: 5rem;
+        margin-right: 4rem;
+    }
+    .main-lower-vector{
+        visibility: collapse;
+    }
+}
+@media (max-height: 750px) {
+    .main-section{
+        height: 100vh;
+    }
+    .main-lower-vector{
+        top: 150vh;
+    }
+}
